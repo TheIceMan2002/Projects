@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Pong</title>
+
+</head>
+
+<body>
+
+    <canvas id="canvas"></canvas>
+    <div id="start" style="display:block">
+        <a href="#" id="test" onclick="startGame();sound();count(); ">Start Game</a>
+    </div>
+    <div id="game-over" style="display: none">
+        <h1>Game Over</h1>
+
+    </div>
+    <audio id="sound" loop>
+        <source src="Background music.mp3" type="audio/mp3" />
+    </audio>
+
+    <div id="bye">
+        <p id="countdown" style="display:none"></p>
+    </div>
+        <div id="gameTable">
+            <canvas id="gameBoard" width="750" height="450" style="display: none"></canvas>
+            <div id="scoreText" style="display:none">0 : 0</div>
+            <button id="resetBtn" style="display:none">Reset</button>
+        </div>
+        <script src="Functions.js"></script>
+    </div>
+    </datalist>
+    <div class="board"></div>
+    <h1 class="player1_score"></h1>
+    <h1 class="player2_score"></h1>
+    <h1 class="message">
+</body>
+
+</html>
